@@ -1,35 +1,77 @@
 
 
 body {
-    padding: 0 25px;
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(3, 3, 3);
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 @media screen and (max-width: 560px){
   body {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 480px){
   body {
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
   }
 }
+
+/*マウスストーカー*/
+
+#js-cursor{
+  pointer-events: none;
+  position: fixed;
+  top: -5px; 
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color:#a2a2a2;;
+  border-radius: 50%;
+  transform: transform 1s ease-out;
+  z-index: 10000;
+  opacity: 0;
+}
+
+#js-mouse {
+  pointer-events: none;
+  position: fixed;
+  top: -15px; 
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color:rgb(118, 0, 253);
+  border-radius: 50%;
+  transition: transform 2s ease-in;
+  z-index: 9999;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px){
+  #js-cursor {
+    display: none;
+  }
+  #js-mouse {
+    display: none;
+  }
+}
+
 
 /*ここからヘッダー*/
 
 header {
     position: -webkit-sticky;
     position: sticky;
-    z-index: 100;
-    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   @media screen and (max-width: 480px){
@@ -39,16 +81,16 @@ header {
   }
 
   
-  .header-left h1 {
-    font-family: 'Prompt', 'Montserrat', 'Cabin', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
+  .header-left p {
+    font-size: 11px;
+    font-weight: 700;
+    color: #a2a2a2;
   }
+
   @media screen and (max-width: 480px){
-    .header-left h1 {
-      font-size: 10px;
-    }
+    .header-left p {
+      display: none;
+  }
   }
 
   
@@ -58,20 +100,19 @@ header {
   }
   
   .header-right ul li {
-    margin-left: 15px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 11px;
   }
   
   .header-right ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Prompt', 'Montserrat', 'Cabin', sans-serif;
-    font-size: 15px;
+    color: #a2a2a2;
   }
 
   @media screen and (max-width: 480px){
     .header-right ul li a{
-      font-size: 10px;
+      font-size: 11px;
     }
   }
 
@@ -91,11 +132,176 @@ header {
     100% { color: rgba(0, 4, 255, 0.9); }
   }
 
+
+/*KV*/
+
+.KV {
+  background-color: #272727;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+/*about*/
+
+ .About {
+  color: #a2a2a2;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 22px;
+}
+
+.About h1 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.About h2 {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 560px){
+  .About h1{
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .About p{
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  .About a{
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+.profile {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #393939 1px solid;
+}
+
+@media screen and (max-width: 768px){
+  .profile {
+    display:flex;
+    flex-flow: column;
+  }
+}
+
+
+
+.profile img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .profile img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+
+
+.profile-text {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .profile-text{
+    padding-left: 0px;
+  }
+}
+
+.profile-text a {
+  color: #a2a2a2;
+}
+
+.profile-text p :hover{
+  animation: color 10s infinite;
+}
+
+.SNS {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #393939 1px solid;
+}
+
+.SNS ul{
+  display: flex;
+  padding-left: 0px;
+}
+
+.SNS li{
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+  color: #a2a2a2;
+}
+
+.SNS a {
+  color: #a2a2a2;
+}
+
+.SNS a :hover{
+  animation: color 10s infinite;
+}
+
+.SNS p :hover{
+  animation: color 10s infinite;
+}
+
+@keyframes color {
+  0% { color: rgba(0, 4, 255, 0.9); }
+  25% { color: rgba(255, 0, 0, 0.9); }
+  50% { color: rgba(92, 92, 92, 0.9); }
+  75% { color: rgba(255, 0, 0, 0.9); }
+  100% { color: rgba(0, 4, 255, 0.9); }
+}
+
+.award {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #393939 1px solid;
+}
+
+.award a {
+  color: #a2a2a2;
+}
+
+
 /*ここからグリッド*/  
 
   .photo-grid {
     margin: auto;
-    columns: 3;
+    columns: 4;
+    position: relative;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 1024px){
+    .photo-grid {
+      columns: 2;
+    }
   }
 
   @media screen and (max-width: 560px){
@@ -103,28 +309,24 @@ header {
       columns: 1;
     }
   }
-
-
-
-  @media screen and (max-width: 480px){
-    .photo-grid {
-
-    }
-  }
-
   
   .photo-grid-item {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius:10px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding:0 0px;
     transition: all 0.5s ease-out;
-    
   }
-  
+
   .photo-grid-item img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .photo-grid-item video {
     width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -133,19 +335,25 @@ header {
   .photo-grid-item h1 {
     color: black;
     position: absolute;
-    font-size: 20px;
+    font-size: 10px;
   }
   
   .photo-grid-item:hover {
     transition: all 0.5s ease-out;
     border-radius: 30px;
-    scale: 1.02;
+    scale: 1.01;
   }
 
    .photo-grid-item:hover img {
     filter: blur(6px);
     border-radius: 30px;
-    scale: 1.02;
+    scale: 1.1;
+  }
+
+  .photo-grid-item:hover video {
+    filter: blur(6px);
+    border-radius: 30px;
+    scale: 1.01;
   }
   
   .photo-caption {
@@ -156,26 +364,46 @@ header {
     right: 0;
     margin: 0;
     opacity: 0;
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
     width: 100%;
     overflow: scroll;
     border-radius: 10px;
     animation: bg-color 10s infinite;
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 30, 255, 1)  10%, rgb(0, 0, 0) 50%, rgb(255, 54, 181) 70%, rgb(255, 0, 34) 90%,rgba(255, 255, 255, 1));    
   }
 
   .photo-grid-item:hover .photo-caption {
     opacity: 1;
-    background-color: #101010 0.5;
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 30, 255, 1)  10%, rgb(0, 0, 0) 50%, rgb(255, 54, 181) 70%, rgb(255, 0, 34) 90%,rgba(255, 255, 255, 1));    
-    border-radius: 30px;
-    mix-blend-mode: ex;
+    border-radius: 20px;
+    scale: 1.01;
+  }
+
+  .background1 {
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(21, 255, 0)  10%, rgb(0, 0, 0) 50%, rgb(54, 84, 255) 70%, rgb(119, 0, 255) 90%,rgba(255, 255, 255, 1));    
+  }
+  .background2 {
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(255, 77, 0)  10%, rgb(0, 0, 0) 50%, rgb(74, 54, 255) 70%, rgb(4, 0, 255) 90%,rgba(255, 255, 255, 1));    
+  }
+  .background3 {
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgb(252, 0, 0) 0%, rgb(255, 183, 0)  10%, rgb(9, 9, 9) 50%, rgb(245, 54, 255) 70%, rgb(106, 0, 255) 90%,rgba(255, 255, 255, 1)); 
+  }
+  .background4 {
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgb(0, 252, 59) 0%, rgb(77, 251, 181)  10%, rgb(0, 0, 0) 50%, rgb(255, 158, 54) 70%, rgb(255, 0, 166) 90%,rgba(255, 255, 255, 1)); 
+  }
+  .background5 {
+    background-color: #101010 1;
+    background-image: linear-gradient(0deg, rgb(134, 124, 124) 0%, rgb(4, 0, 255)  10%, rgb(0, 0, 0) 50%, rgb(148, 149, 122) 70%, rgb(255, 0, 68) 90%,rgb(64, 93, 255)); 
   }
 
   .photo-caption p {
     color: rgb(253, 253, 253);
-    font-family: 'Prompt', 'Montserrat', 'Cabin', sans-serif;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
     line-height: 23px;
     margin-top: 25px;
@@ -183,14 +411,22 @@ header {
     margin-right: 25px;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 560px){
     .photo-caption p{
-      font-size: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 22px;
     }
   }
 
   .photo-caption p + p {
-    margin-top: 10px;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 560px){
+    .photo-caption p + p {
+      margin-top: 5px;
+    }
   }
 
   a {
@@ -203,7 +439,6 @@ header {
   }
 
 
-
 /*ここからフッター*/  
   
   .footer {
@@ -212,15 +447,13 @@ header {
   }
   
   .back-to-top {
-    font-family: 'Prompt', 'Montserrat', 'Cabin', sans-serif;
     display: inline-block;
     padding: 10px;
-    color: #ffffff;
+    color: #a2a2a2;
     text-decoration: none;
-    border-radius: 4px;
     margin-right: 20px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
   }
   
   .back-to-top:hover {
@@ -238,11 +471,10 @@ header {
   }
   
   .footer p {
-    font-family: sans-serif;
     font-weight: 500;
     font-size: 8px;
     margin: 10px 0 0;
-    color: #ffffff;
+    color: #a2a2a2;
   }
   
   @media screen and (max-width: 480px) {
