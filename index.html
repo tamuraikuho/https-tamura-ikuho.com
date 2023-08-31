@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>田村育歩 / TAMURA Ikuho Design Worksp</title>
-    <meta name="discripsiton" content="2020年3月に尾道市立大学芸術文化学部美術学科を卒業。グラフィックデザイン、タイポグラフィ、映像、3DCG、コミッションワークなどの制作を中心に、グラフィック領域における視覚表現の探求を通じた、新しい情緒的価値の創造を実践しています。">
-    <link rel="stylesheet" href="./style.css?ver=1.2.8">
+    <title>田村育歩 / TAMURA Ikuho Design Works</title>
+    <meta name="description" content="2020年3月に尾道市立大学芸術文化学部美術学科を卒業。グラフィックデザイン、タイポグラフィ、映像、3DCG、コミッションワークなどの制作を中心に、グラフィック領域における視覚表現の探求を通じた、新しい情緒的価値の創造を実践しています。">
+    <link rel="stylesheet" href="./style.css?ver=1.3.4">
     <script src="https://kit.fontawesome.com/c6b51d97f6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +31,26 @@
     <!-- FB -->
     <meta property="fb:app_id" content="FacebookアプリID" />
     <!-- TW -->
-    <meta name=”twitter:card” content=”summary_large_image” />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@metya_sodatuyo" />
     <meta name="twitter:creator" content="@metya_sodatuyo" />
     <meta name="twitter:title" content="TAMURA Ikuho Design Works" />
-    <meta name=”twitter:description” content="2020年3月に尾道市立大学芸術文化学部美術学科を卒業。グラフィックデザイン、タイポグラフィ、映像、3DCG、コミッションワークなどの制作を中心に、グラフィック領域における視覚表現の探求を通じた、新しい情緒的価値の創造を実践しています。" />
+    <meta name="twitter:description" content="2020年3月に尾道市立大学芸術文化学部美術学科を卒業。グラフィックデザイン、タイポグラフィ、映像、3DCG、コミッションワークなどの制作を中心に、グラフィック領域における視覚表現の探求を通じた、新しい情緒的価値の創造を実践しています。" />
     <meta name="twitter:image" content="https://tamura-ikuho.com/_images/cover.jpg" />
 
 </head>
 <body>
+  <div id="loading">
+    <div class="load">
+      <div class="semipolar-spinner" :style="spinnerStyle">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+    </div>
+  </div>
   <div id="js-cursor"></div>    
   <div id="js-mouse"></div>
       <header class="header">
@@ -53,9 +64,11 @@
                 <li><a href="./about.html">About</a></li>
                 <li><a href="mailto:dondonsodatsuyo@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
                 <li><a href="https://twitter.com/metya_sodatuyo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.threads.net/@dondon_sodatsuyo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i></a></li>
                 <li><a href="https://www.instagram.com/dondon_sodatsuyo/?hl=ja" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCDExs0cmU3m5hAF2UlwHhLg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></li>
                 <li><a href="https://www.behance.net/dondonsoda32952" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="https://ikuhotamura.notion.site/TAMURA-Ikuho-Notion-Space-a79199144dfd41f8bd3c47bbcb810837?pvs=4" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book"></i></a></li>
             </ul>
             </nav>
         </div>
@@ -65,8 +78,8 @@
           <div class="photo-grid-item">
             <img src="./_images/107.webp" alt="Photo 4">
             <div class="photo-caption">
-              <p>KABIN KYOTO LAUNCH PARTY KV</p>
-              <p>CL : KABIN</p>
+              <p>KABIN Kyoto Launch Party KV</p>
+              <p>CL : KABIN Kyoto</p>
               <p>D : TAMURA Ikuho</p>
               <p>2023</p>
               <p><a href="https://zaiko.io/event/358417" target="_blank" rel="noopener noreferrer">Link</a></p>
@@ -83,6 +96,33 @@
           </div>
           <div class="photo-grid-item">
             <img src="./_images/106.webp" alt="Photo 4">
+            <div class="photo-caption">
+              <p>Bellows alphabet typography</p>
+              <p>Independent production</p>
+              <p>2023</p>
+              <p><a href="https://youtube.com/shorts/J9K3ac3T-9Q?feature=share" target="_blank" rel="noopener noreferrer">Link</a></p>
+            </div>
+          </div>
+          <div class="photo-grid-item">
+            <img src="./_images/106-3.webp" alt="Photo 4">
+            <div class="photo-caption">
+              <p>Bellows alphabet typography</p>
+              <p>Independent production</p>
+              <p>2023</p>
+              <p><a href="https://youtube.com/shorts/J9K3ac3T-9Q?feature=share" target="_blank" rel="noopener noreferrer">Link</a></p>
+            </div>
+          </div>
+          <div class="photo-grid-item">
+            <img src="./_images/106-4.webp" alt="Photo 4">
+            <div class="photo-caption">
+              <p>Bellows alphabet typography</p>
+              <p>Independent production</p>
+              <p>2023</p>
+              <p><a href="https://youtube.com/shorts/J9K3ac3T-9Q?feature=share" target="_blank" rel="noopener noreferrer">Link</a></p>
+            </div>
+          </div>
+          <div class="photo-grid-item">
+            <img src="./_images/106-5.webp" alt="Photo 4">
             <div class="photo-caption">
               <p>Bellows alphabet typography</p>
               <p>Independent production</p>
@@ -178,12 +218,12 @@
             <img src="./_images/98.webp" alt="Photo 4">
             <div class="photo-caption">
               <p>Flowers, Books, Life</p>
-              <p><a href="https://www.instagram.com/p/Cs51O5kyGer/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"></a>Project by ORANGE PARLOR pop-up in SHIBUYA PARCO</a></p>
+              <p><a href="https://www.instagram.com/p/Cs51O5kyGer/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"></a>Project by ORANGE PARLOR pop-up in SHIBUYA PARCO</p>
               <p>Giclee print (Printing by 徳川印刷)</p>
               <p>250*250mm</p>
               <p>2023</p>
               <p>-</p>
-              <p>”自身にとっての生活至好品とは”というテーマを受け、紙の書籍を思い浮かべた。装丁や紙の質感など、フィジカルとしての存在がはっきりと知覚できることで、電子書籍よりも暮らしや情緒に対する豊かさのリターンが多いように感じる。新しい書籍を本棚に収めることは、花を飾るような感覚に等しい。</p>
+              <p>"自身にとっての生活至好品とは"というテーマを受け、紙の書籍を思い浮かべた。装丁や紙の質感など、フィジカルとしての存在がはっきりと知覚できることで、電子書籍よりも暮らしや情緒に対する豊かさのリターンが多いように感じる。新しい書籍を本棚に収めることは、花を飾るような感覚に等しい。</p>
             </div>
           </div>
           <div class="photo-grid-item">
@@ -227,7 +267,7 @@
               <p>2023</p>
               <p><a href="https://youtube.com/shorts/kSUEavO4bWU" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
-              <p>鎌倉時代。盲目の僧・琵琶法師が平家の栄華と没落を語り歩いた”平家物語”は、現在も様々なメディアに多様な形で受け継がれている。その命題をより情緒的かつ視覚的に伝達するための媒体として、モーションポスターには適正があると考えた。不確実に乱れ動くグラフィックスは、平家の彷徨える御霊を表現している。</p>
+              <p>鎌倉時代。盲目の僧・琵琶法師が平家の栄華と没落を語り歩いた"平家物語"は、現在も様々なメディアに多様な形で受け継がれている。その命題をより情緒的かつ視覚的に伝達するための媒体として、モーションポスターには適正があると考えた。不確実に乱れ動くグラフィックスは、平家の彷徨える御霊を表現している。</p>
               <p>昨今、グラフィックデザインの在り方や解釈の余地はより自由に楽しく変容している。モーションポスターの台頭により、平面的な視覚表現により確実な時間軸が備わった。本来の紙媒体としての存在からよりデジタルネイティブに移行する過程を、私はポジティブに捉えていきたい。</p>
             </div>
           </div>
@@ -272,11 +312,11 @@
           <div class="photo-grid-item">
             <img src="./_images/85.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak”</p>
-              <p>“Omitnak” Director : TAMURA Ikuho</p>
-              <p>Director : Charles Chung (maxilla) & Shunsuke Sugiyama (mimoid)</p>
+              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak"</p>
+              <p>“Omitnak" Director : TAMURA Ikuho</p>
+              <p>Director : Charles Chung (maxilla)&Shunsuke Sugiyama (mimoid)</p>
               <p>Producer, Planner : Tsuyoshi Yabuki (maxilla)</p>
-              <p>CG & Animation Producer : Takemi Inagaki</p>
+              <p>CG&Animation Producer : Takemi Inagaki</p>
               <p>Chief Production Manager : Sho Imoto</p>
               <p>Production Assistant : Kengo Hanada</p>
               <p>2023</p>
@@ -292,11 +332,11 @@
           <div class="photo-grid-item">
             <img src="./_images/86.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak”</p>
-              <p>“Omitnak” Director : TAMURA Ikuho</p>
-              <p>Director : Charles Chung (maxilla) & Shunsuke Sugiyama (mimoid)</p>
+              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak"</p>
+              <p>“Omitnak" Director : TAMURA Ikuho</p>
+              <p>Director : Charles Chung (maxilla)&Shunsuke Sugiyama (mimoid)</p>
               <p>Producer, Planner : Tsuyoshi Yabuki (maxilla)</p>
-              <p>CG & Animation Producer : Takemi Inagaki</p>
+              <p>CG&Animation Producer : Takemi Inagaki</p>
               <p>Chief Production Manager : Sho Imoto</p>
               <p>Production Assistant : Kengo Hanada</p>
               <p>2023</p>
@@ -312,11 +352,11 @@
           <div class="photo-grid-item">
             <img src="./_images/87.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak”</p>
-              <p>“Omitnak” Director : TAMURA Ikuho</p>
-              <p>Director : Charles Chung (maxilla) & Shunsuke Sugiyama (mimoid)</p>
+              <p>パソコン音楽クラブ「FINE LINE」全曲トレーラームービー M07 “Omitnak"</p>
+              <p>“Omitnak" Director : TAMURA Ikuho</p>
+              <p>Director : Charles Chung (maxilla)&Shunsuke Sugiyama (mimoid)</p>
               <p>Producer, Planner : Tsuyoshi Yabuki (maxilla)</p>
-              <p>CG & Animation Producer : Takemi Inagaki</p>
+              <p>CG&Animation Producer : Takemi Inagaki</p>
               <p>Chief Production Manager : Sho Imoto</p>
               <p>Production Assistant : Kengo Hanada</p>
               <p>2023</p>
@@ -342,7 +382,7 @@
               <p>Vetta / gato Remix</p>
               <p>Why Don't We Try This? / Mong Tong Remix</p>
               <p>Dotmetry / xiangyu's Chicken Remix</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2023</p>
               <p><a href="https://big-up.style/BwEIvb4QAB" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -360,18 +400,18 @@
           <div class="photo-grid-item">
             <img src="./_images/02-5.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>36daysoftype10 DAY09 “I” RGB-print</p>
+              <p>36days oft ype 10 DAY09 “I" RGB-print</p>
               <p>independent production</p>
               <p>2023</p>
               <p><a href="https://www.instagram.com/p/Cq1rLrFyKMU/?hl=ja" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
-              <p>36daysoftypeはスペインのグラフィックデザイナー、Nina Sans氏とRafa Goicoechea氏により、2014年から始動したプロジェクトである。タイポグラフィとレターフォームの無限のグラフィックの可能性を探求するべく、世界中のデザイナー、イラストレーター、ビジュアルアーティストに開かれたグローバルなプロジェクトである。昨年に引き続き2023年度も自主的に参加。創造の根源をくすぐるような色彩とモチーフから成るタイポグラフィを作成した。今回、”I”のタイポグラフィを優れたレファレンスとして、公式にピックアップして頂いたため、記念にRGB印刷を用いてポストカードを制作した。</p>
+              <p>36daysoftypeはスペインのグラフィックデザイナー、Nina Sans氏とRafa Goicoechea氏により、2014年から始動したプロジェクトである。タイポグラフィとレターフォームの無限のグラフィックの可能性を探求するべく、世界中のデザイナー、イラストレーター、ビジュアルアーティストに開かれたグローバルなプロジェクトである。昨年に引き続き2023年度も自主的に参加。創造の根源をくすぐるような色彩とモチーフから成るタイポグラフィを作成した。今回、"I"のタイポグラフィを優れたレファレンスとして、公式にピックアップして頂いたため、記念にRGB印刷を用いてポストカードを制作した。</p>
             </div>
           </div>
           <div class="photo-grid-item">
             <img src="./_images/02-4.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>36daysoftype 10</p>
+              <p>36days oft ype 10</p>
               <p>independent production</p>
               <p>MU : SKYTOPIA</p>
               <p>2023</p>
@@ -383,7 +423,7 @@
           <div class="photo-grid-item">
             <img src="./_images/02.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>36daysoftype 10</p>
+              <p>36days oft ype 10</p>
               <p>independent production</p>
               <p>MU : SKYTOPIA</p>
               <p>2023</p>
@@ -395,7 +435,7 @@
           <div class="photo-grid-item">
             <img src="./_images/02-3.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>36daysoftype 10</p>
+              <p>36days oft ype 10</p>
               <p>independent production</p>
               <p>MU : SKYTOPIA</p>
               <p>2023</p>
@@ -407,7 +447,7 @@
           <div class="photo-grid-item">
             <img src="./_images/02-2.webp" alt="Photo 2">
             <div class="photo-caption">
-              <p>36daysoftype 10</p>
+              <p>36days oft ype 10</p>
               <p>independent production</p>
               <p>MU : SKYTOPIA</p>
               <p>2023</p>
@@ -527,7 +567,7 @@
             <div class="photo-caption">
               <p>SKYTOPIA "Warped" Cover artwork</p>
               <p>MU : SKYTOPIA</p>
-              <p>D & 3DCG & MO : TAMURA Ikuho</p>
+              <p>D&3DCG&MO : TAMURA Ikuho</p>
               <p>2022</p>
             </div>
           </div>
@@ -536,7 +576,7 @@
             <div class="photo-caption">
               <p>Canopus in NEWVIEW CYPHER Season5</p>
               <p>Project by NEWVIEW CYPHER</p>
-              <p>D & MO & VR : TAMURA Ikuho</p>
+              <p>D&MO&VR : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/ICYbwThic1o" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -549,7 +589,7 @@
             <div class="photo-caption">
               <p>Perforated in NEWVIEW CYPHER Season5</p>
               <p>Project by NEWVIEW CYPHER</p>
-              <p>D & MO & AR : TAMURA Ikuho</p>
+              <p>D&MO&AR : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/ZKrdx5kTp6E" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -614,7 +654,7 @@
             <div class="photo-caption">
               <p>Coldhot DJ Background Movie @ VVAVEⅢ</p>
               <p>CL : Coldhot</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/2BNHVJV9sRI" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -626,7 +666,7 @@
             <div class="photo-caption">
               <p>Coldhot DJ Background Movie @ VVAVEⅢ</p>
               <p>CL : Coldhot</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/2BNHVJV9sRI" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -638,7 +678,7 @@
             <div class="photo-caption">
               <p>Coldhot DJ Background Movie @ VVAVEⅢ</p>
               <p>CL : Coldhot</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/2BNHVJV9sRI" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -650,7 +690,7 @@
             <div class="photo-caption">
               <p>Coldhot DJ Background Movie @ VVAVEⅢ</p>
               <p>CL : Coldhot</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/2BNHVJV9sRI" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -662,7 +702,7 @@
             <div class="photo-caption">
               <p>SKYTOPIA DJ Background Movie set 2022</p>
               <p>CL : SKYTOPIA</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/VyVV0QNbwVg" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -674,7 +714,7 @@
             <div class="photo-caption">
               <p>SKYTOPIA DJ Background Movie set 2022</p>
               <p>CL : SKYTOPIA</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/VyVV0QNbwVg" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -686,7 +726,7 @@
             <div class="photo-caption">
               <p>SKYTOPIA DJ Background Movie set 2022</p>
               <p>CL : SKYTOPIA</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/VyVV0QNbwVg" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -698,7 +738,7 @@
             <div class="photo-caption">
               <p>SKYTOPIA DJ Background Movie set 2022</p>
               <p>CL : SKYTOPIA</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/VyVV0QNbwVg" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -761,7 +801,7 @@
             <div class="photo-caption">
               <p>Coldhot Release project 2022 Cover artwork</p>
               <p>CL : Coldhot</p>
-              <p>D & MO : TAMURA Ikuho</p>
+              <p>D&MO : TAMURA Ikuho</p>
               <p>2022</p>
               <p><a href="https://youtu.be/q_SSZEiu5vw" target="_blank" rel="noopener noreferrer">Link</a></p>
               <p>-</p>
@@ -1189,9 +1229,7 @@
     </p>
   </footer>
 
-  <script src="processing.min.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
+  <script src="./script.js?ver=0.0.1"></script>
 </body>
 </html>
